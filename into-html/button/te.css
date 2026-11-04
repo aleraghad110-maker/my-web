@@ -1,0 +1,28 @@
+.title{
+    font-family: Montserrat;
+    font-weight:bold;
+    font-size: 50px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    text-align: center;
+}
+.content{
+font-family: Montserrat;
+font-size: 30px;
+text-align: center;
+margin-top: 8px;
+}
+.tuch{  
+font-family: Montserrat;
+font-size: 30px;
+text-align: center;
+text-decoration: underline;
+margin-top: 8px;
+cursor: pointer;
+}
+.tuch:hover{
+color:aquamarine;
+}
+.tuch:active{
+    background-color: bisque;
+}
