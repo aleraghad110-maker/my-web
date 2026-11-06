@@ -18,7 +18,6 @@
             width: 280px;
             height: 280px;
             object-fit: cover;
-            display: inline-block;
             vertical-align: top;
         }
 
@@ -26,7 +25,6 @@
             font-size: 28px;
             font-weight: bold;
             font-family: Arial;
-            display: inline-block;
             text-align: left;
             margin-top: 4px;
             margin-left: 8px;
@@ -41,10 +39,9 @@
             color: rgba(128, 128, 128, 0.872);
             font-family: Arial;
             font-weight: bold;
-            display: block;
             text-align: left;
             margin-left:8px;
-            margin-top: 0px;
+            margin-top: 8px;
             margin-bottom: 2px;
             width: 280px;
             vertical-align: middle;
@@ -58,14 +55,12 @@
             font-weight: bold;
             background-color: rgb(47, 126, 238);
             border-radius: 8px;
-            display: block;
             width: 140px;
             height: 40px;
             text-align: center;
             margin-top: 8px;
             margin-left: 8px;
             display: block;
-            vertical-align: middle;
         }
 
         .site-2 {
@@ -73,7 +68,6 @@
             height: 410px;
             border-color: rgba(128, 128, 128, 0.21);
             box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-            display: inline-block;
             margin-left: 8px;
             margin-top: 0;
             vertical-align: top;
@@ -83,7 +77,6 @@
             width: 280px;
             height: 280px;
             object-fit: cover;
-            display: inline-block;
             margin-top: 0;
             vertical-align: top;
         }
@@ -94,7 +87,6 @@
             border-color: rgba(128, 128, 128, 0.21);
             box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
             margin-top: 0;
-            display: inline-block;
             margin-right: 0;
             margin-bottom: 0;
             margin-left: 8px;
@@ -116,38 +108,53 @@
             vertical-align: middle;
             margin-top: 4px;
             margin-left: 0px;
-            display: inline-block;
         }
 
-        .place {
-            vertical-align: ;
-        }
+        
     </style>
 </head>
 
 <body>
-    <div class="site">
+    <div style="display:grid;
+    grid-template-columns:280px 280px 280px;
+    column-gap: 16px;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
+">
+    <div style="display: grid;
+    grid-template-columns: 10px;
+    grid-row: 4px;">
         <img class=cat src="images/Cat.JPG">
         <p class="title">cat</p>
-        <p class="number-friend"><img class="small" src="images/dog.jpeg">
-            2 mutual friends</p>
+        <div style="display: grid;
+        grid-template-columns: 10px 10px;
+        column-gap: 30px;
+        "><img class="small" src="images/dog.jpeg">
+        <p class="number-friend">2 mutual friends</p></div>
         <button class="friend">Add Friend</button>
     </div>
-    <div class="site-2">
+    <div>
         <img class=tiger src="images/tiger.jpeg">
         <p class="title">tiger</p>
-        <p class="number-friend"><img class="small" src="images/Cat.JPG"> 3 mutual friends</p>
+        <div style="display: grid;
+        grid-template-columns: 10px 10px;
+        column-gap: 30px;
+        "><img class="small" src="images/tiger.jpeg">
+        <p class="number-friend"> 3 mutual friends</p></div>
         <button class="friend">Add Friend</button>
     </div>
-
-
-    <div class="site-3">
+    <div>
         <img class=dog src="images/dog.jpeg">
         <p class="title">dog</p>
-        <p class="number-friend"> <img class="small" src="images/tiger.jpeg"> 5 mutual friends</p>
+        <div style="display: grid;
+        grid-template-columns: 10px 10px;
+        column-gap: 30px;
+        "><img class="small" src="images/dog.jpeg">
+        <p class="number-friend">5 mutual friends</p>
         <button class="friend">Add Friend</button>
     </div>
-
+    </div>
+    </div>
 </body>
 
 </html>
