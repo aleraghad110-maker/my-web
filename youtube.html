@@ -1,94 +1,153 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <title>Uber</title>
-        <style>
-            
-            .site{
-                width:280px;
-                height: 410px;
-                border-color: rgba(128, 128, 128, 0.21);
-                box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-                display: inline-block;
-            }
-            .cat{
-                width:280px;
-                height:280px;
-                object-fit: cover;
-                display:inline-block;
-            }
-            .title{
-                font-size: 20px;
-                font-weight: bold;
-                font-family: Arial;
-                display: inline-block;
-                text-align: lift;
-                margin-top: 12px;
-                margin-left: 8px;
-                margin-bottom: 4px;
-                width:280px;
 
-            }
-            .number-friend{
-                font-size: 14px;
-                color: rgba(128, 128, 128, 0.872);
-                font-family: Arial;
-                font-weight: bold;
-                display: block;
-                text-align: lift;
-                margin-top: 4px;
-                margin-left: 8px;
-                width:280px;
+<head>
+    <title>Uber</title>
+    <style>
+        .site {
+            width: 280px;
+            height: 410px;
+            border-color: rgba(128, 128, 128, 0.21);
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
+            display: inline-block;
+            vertical-align: top;
 
-            
-            }
-            .friend{
-                font-size: 14px;
-                color: white;
-                font-family: Arial;
-                font-weight: bold;
-                background-color: rgb(47, 126, 238);
-                border-radius: 8px;
-                display: block;
-                width: 140px;
-                height: 40px;
-                text-align: lift;
-                margin-top: 2px;
-                margin-left: 8px;
-            }
-            .tiger{
-                width:280px;
-                height:280px;
-                object-fit: cover;
-                display:inline-block;           
-            }
-            .title-2{
-                font-size: 20px;
-                font-weight: bold;
-                font-family: Arial;
-                display: inline-block;
-                text-align: lift;
-                margin-top: 12px;
-                margin-left: 8px;
-                margin-bottom: 4px;
-                width:280px;
-            }
+        }
 
- 
-        </style>
-    </head>
-    <body>
-        <div class="site">
-            <img class= cat src="images/Cat.JPG">
-           <p class="title">cat</p>
-           <p class="number-friend"> 2 mutual friends</p>
-            <button class="friend">Add Friend</button>
+        .cat {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            display: inline-block;
+            vertical-align: top;
+        }
 
-            <img class= tiger src="images/tiger.jpeg">
-           <p class="title-2">tiger</p>
-           <p class="number-friend-2"> 3 mutual friends</p>
-            <button class="friend-2">Add Friend</button>
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            font-family: Arial;
+            display: inline-block;
+            text-align: left;
+            margin-top: 4px;
+            margin-left: 8px;
+            margin-bottom: 0px;
+            width: 280px;
+            vertical-align: top;
 
-</div>
-    </body>
+        }
+
+        .number-friend {
+            font-size: 18px;
+            color: rgba(128, 128, 128, 0.872);
+            font-family: Arial;
+            font-weight: bold;
+            display: block;
+            text-align: left;
+            margin-left:8px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+            width: 280px;
+            vertical-align: middle;
+
+        }
+
+        .friend {
+            font-size: 14px;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            background-color: rgb(47, 126, 238);
+            border-radius: 8px;
+            display: block;
+            width: 140px;
+            height: 40px;
+            text-align: center;
+            margin-top: 8px;
+            margin-left: 8px;
+            display: block;
+            vertical-align: middle;
+        }
+
+        .site-2 {
+            width: 280px;
+            height: 410px;
+            border-color: rgba(128, 128, 128, 0.21);
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
+            display: inline-block;
+            margin-left: 8px;
+            margin-top: 0;
+            vertical-align: top;
+        }
+
+        .tiger {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            display: inline-block;
+            margin-top: 0;
+            vertical-align: top;
+        }
+
+        .site-3 {
+            width: 280px;
+            height: 410px;
+            border-color: rgba(128, 128, 128, 0.21);
+            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
+            margin-top: 0;
+            display: inline-block;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-left: 8px;
+            vertical-align: top;
+        }
+
+        .dog {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            margin-top: 0;
+            vertical-align: top;
+        }
+
+        .small {
+            width: 38px;
+            height: 38px;
+            border-radius: 50px;
+            vertical-align: middle;
+            margin-top: 4px;
+            margin-left: 0px;
+            display: inline-block;
+        }
+
+        .place {
+            vertical-align: ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+        <img class=cat src="images/Cat.JPG">
+        <p class="title">cat</p>
+        <p class="number-friend"><img class="small" src="images/dog.jpeg">
+            2 mutual friends</p>
+        <button class="friend">Add Friend</button>
+    </div>
+    <div class="site-2">
+        <img class=tiger src="images/tiger.jpeg">
+        <p class="title">tiger</p>
+        <p class="number-friend"><img class="small" src="images/Cat.JPG"> 3 mutual friends</p>
+        <button class="friend">Add Friend</button>
+    </div>
+
+
+    <div class="site-3">
+        <img class=dog src="images/dog.jpeg">
+        <p class="title">dog</p>
+        <p class="number-friend"> <img class="small" src="images/tiger.jpeg"> 5 mutual friends</p>
+        <button class="friend">Add Friend</button>
+    </div>
+
+</body>
+
 </html>
