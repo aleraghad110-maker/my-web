@@ -4,19 +4,11 @@
 <head>
     <title>Uber</title>
     <style>
-        .site {
-            width: 280px;
-            height: 410px;
-            border-color: rgba(128, 128, 128, 0.21);
-            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-            display: inline-block;
-            vertical-align: top;
+    
 
-        }
-
-        .cat {
-            width: 280px;
-            height: 280px;
+        .cat,.tiger,.dog {
+            width: 300px;
+            height: 300px;
             object-fit: cover;
             vertical-align: top;
         }
@@ -39,13 +31,11 @@
             color: rgba(128, 128, 128, 0.872);
             font-family: Arial;
             font-weight: bold;
-            text-align: left;
-            margin-left:8px;
-            margin-top: 8px;
-            margin-bottom: 2px;
-            width: 280px;
+            display: inline-block;
             vertical-align: middle;
-
+            margin-left: 4px;
+            margin-top: 4px;
+            margin-bottom: 0;
         }
 
         .friend {
@@ -54,106 +44,63 @@
             font-family: Arial;
             font-weight: bold;
             background-color: rgb(47, 126, 238);
-            border-radius: 8px;
+            border-radius: 4px;
             width: 140px;
             height: 40px;
             text-align: center;
-            margin-top: 8px;
+            margin-top: 4px;
             margin-left: 8px;
+            margin-bottom: 4px;   
             display: block;
         }
-
-        .site-2 {
-            width: 280px;
-            height: 410px;
-            border-color: rgba(128, 128, 128, 0.21);
-            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-            margin-left: 8px;
-            margin-top: 0;
-            vertical-align: top;
-        }
-
-        .tiger {
-            width: 280px;
-            height: 280px;
-            object-fit: cover;
-            margin-top: 0;
-            vertical-align: top;
-        }
-
-        .site-3 {
-            width: 280px;
-            height: 410px;
-            border-color: rgba(128, 128, 128, 0.21);
-            box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-            margin-top: 0;
-            margin-right: 0;
-            margin-bottom: 0;
-            margin-left: 8px;
-            vertical-align: top;
-        }
-
-        .dog {
-            width: 280px;
-            height: 280px;
-            object-fit: cover;
-            margin-top: 0;
-            vertical-align: top;
-        }
-
         .small {
             width: 38px;
             height: 38px;
             border-radius: 50px;
+            display: inline-block;
             vertical-align: middle;
-            margin-top: 4px;
-            margin-left: 0px;
+            margin-top:0px;
+            margin-left: 8px;
+            margin-bottom: 0;
+        }
+        .place{
+        margin-top: 0px;
+        vertical-align: middle;
+        display: inline-block;
         }
 
-        
     </style>
 </head>
 
 <body>
     <div style="display:grid;
-    grid-template-columns:280px 280px 280px;
-    column-gap: 16px;
-    align-items: center;
-    box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.49);
-">
-    <div style="display: grid;
-    grid-template-columns: 10px;
-    grid-row: 4px;">
-        <img class=cat src="images/Cat.JPG">
+    grid-template-columns:300px 300px 300px;
+    column-gap: 20px;
+    ">
+        <div style="box-shadow: 10px  10px 20px rgba(0, 0, 0, 0.25);
+        "><img class=cat src="images/Cat.JPG">
         <p class="title">cat</p>
-        <div style="display: grid;
-        grid-template-columns: 10px 10px;
-        column-gap: 30px;
-        "><img class="small" src="images/dog.jpeg">
-        <p class="number-friend">2 mutual friends</p></div>
+       <div class="place">
+            <img class="small" src="images/dog.jpeg"> 
+            <p class="number-friend">2 mutual friends</p></div>
         <button class="friend">Add Friend</button>
-    </div>
-    <div>
+    </div> 
+        <div style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);        
+        ">    
         <img class=tiger src="images/tiger.jpeg">
         <p class="title">tiger</p>
-        <div style="display: grid;
-        grid-template-columns: 10px 10px;
-        column-gap: 30px;
-        "><img class="small" src="images/tiger.jpeg">
+        <div class="place">
+        <img class="small" src="images/tiger.jpeg">
         <p class="number-friend"> 3 mutual friends</p></div>
-        <button class="friend">Add Friend</button>
-    </div>
-    <div>
-        <img class=dog src="images/dog.jpeg">
+        <button class="friend">Add Friend</button></div>
+         
+        <div style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+"><img class=dog src="images/dog.jpeg">
         <p class="title">dog</p>
-        <div style="display: grid;
-        grid-template-columns: 10px 10px;
-        column-gap: 30px;
-        "><img class="small" src="images/dog.jpeg">
-        <p class="number-friend">5 mutual friends</p>
-        <button class="friend">Add Friend</button>
-    </div>
-    </div>
+       <div class="place">
+       <img class="small" src="images/Cat.JPG">
+        <p class="number-friend"> 5 mutual friends</p></div>
+        <button class="friend">Add Friend</button></div>
     </div>
 </body>
 
